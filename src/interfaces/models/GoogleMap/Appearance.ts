@@ -1,4 +1,4 @@
-enum MapType {
+export enum MapType {
   /**
    * No base map tiles.
    *
