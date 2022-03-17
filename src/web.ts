@@ -15,6 +15,9 @@ import {
   AddMarkerOptions,
   AddMarkerResult,
   RemoveMarkerOptions,
+  CircleOptions,
+  PolygonOptions,
+  PolylineOptions,
   DidTapInfoWindowCallback,
   DidCloseInfoWindowCallback,
   DidTapMapCallback,
@@ -73,6 +76,18 @@ export class CapacitorGoogleMapsWeb
   }
 
   async removeMarker(_options: RemoveMarkerOptions): Promise<void> {
+    throw this.unimplemented("Not implemented on web.");
+  }
+
+  async addPolyline(_options: PolylineOptions): Promise<void> {
+    throw this.unimplemented("Not implemented on web.");
+  }
+
+  async addCircle(_options: CircleOptions): Promise<void> {
+    throw this.unimplemented("Not implemented on web.");
+  }
+
+  async addPolygon(_options: PolygonOptions): Promise<void> {
     throw this.unimplemented("Not implemented on web.");
   }
 
